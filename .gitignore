@@ -8,3 +8,5 @@ typescript-test-coverage.iml
 vcs.xml
 workspace.xml
 /node_modules/
+/coverage/
+/.nyc_output/

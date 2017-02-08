@@ -4,20 +4,44 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/_mocha --recursive --compilers ts:ts-node/register --bail",
+    "cover": "NODE_ENV=test nyc npm t"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexeyPopovUA/typescript-test-coverage.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Oleksii Popov",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AlexeyPopovUA/typescript-test-coverage/issues"
   },
   "homepage": "https://github.com/AlexeyPopovUA/typescript-test-coverage#readme",
   "devDependencies": {
     "nyc": "^10.1.2",
-    "ts-node": "^2.0.0"
+    "ts-node": "^2.0.0",
+    "typescript": "^2.1.5"
+  },
+  "nyc": {
+    "include": [
+      "app/*.ts"
+    ],
+    "exclude": [
+      "typings"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "json",
+      "html"
+    ],
+    "all": true
+  },
+  "dependencies": {
+    "mocha": "^3.2.0"
   }
 }
