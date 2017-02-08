@@ -1,0 +1,23 @@
+{
+  "name": "typescript-test-coverage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexeyPopovUA/typescript-test-coverage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexeyPopovUA/typescript-test-coverage/issues"
+  },
+  "homepage": "https://github.com/AlexeyPopovUA/typescript-test-coverage#readme",
+  "devDependencies": {
+    "nyc": "^10.1.2",
+    "ts-node": "^2.0.0"
+  }
+}

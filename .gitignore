@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+inspectionProfiles/
+jsLibraryMappings.xml
+misc.xml
+modules.xml
+sonarlint/
+typescript-test-coverage.iml
+vcs.xml
+workspace.xml
+/node_modules/
